@@ -2,8 +2,9 @@ import ImageUploading from 'react-images-uploading';
 import React from 'react';
 import './custom_image_uploader.css'
 
-const CustomImageUploader = ({ label, imageList, onChange, maxNumber }) => <div>
-    <label>Imagenes</label>
+const CustomImageUploader = ({ label, imageList, onChange, maxNumber }) => <div
+className='custom-image-uploader'>
+    <label>{label}</label>
     <ImageUploading
         multiple
         value={imageList}
@@ -13,10 +14,7 @@ const CustomImageUploader = ({ label, imageList, onChange, maxNumber }) => <div>
         {({
             imageList,
             onImageUpload,
-            onImageRemoveAll,
-            onImageUpdate,
             onImageRemove,
-            isDragging,
             dragProps,
         }) => {
             return <div
@@ -26,26 +24,15 @@ const CustomImageUploader = ({ label, imageList, onChange, maxNumber }) => <div>
                 <div className='dragbox-inner-top'>
                     {imageList.map((image, index) => (
                         <div key={index}
-                            style={{
-                                width: 150, height: 150, margin: 20,
-                                borderRadius: 10,
-                                overflow: 'hidden',
-                                position: 'relative',
-
-                            }}
+                            className='dragbox-item'
                             onClick={(e) => e.stopPropagation()}>
-
-                            <img src={image['data_url']}
-                                alt="image"
-                                style={{
-                                    objectFit: 'cover', width: '100%', height: '100%'
-                                }} />
-                            <div className='custom-image-wrapper-remove-button'>X</div>
+                            <img src={image['data_url']} alt="image" />
+                            <div onClick={onImageRemove} className='dragbox-item-remove'>X</div>
                         </div>
                     ))}
                 </div>
                 <div className='dragbox-inner-bottom'>
-                    Arrastre las imagenes aqui o haga click.
+                    Arrastre las imagenes hasta aca o haga click.
                 </div>
             </div>
         }}
