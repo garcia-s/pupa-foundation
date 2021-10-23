@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pupaadmin/router/delegate.dart';
-import 'package:pupaadmin/router/information_parser.dart';
+import 'package:pupaadmin/modules/router/delegate.dart';
+import 'package:pupaadmin/modules/router/information_parser.dart';
 
 void main() => runApp(const MyApp());
 

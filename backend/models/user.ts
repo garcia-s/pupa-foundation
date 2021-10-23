@@ -5,7 +5,6 @@ interface User {
     lastname: string,
     secondLastname?: string,
     username: string,
-   
 }
 
 
