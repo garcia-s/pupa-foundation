@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:pupaadmin/core/widgets/lists/generic_editable_list_sliver.dart';
+import 'package:pupaadmin/core/presentation/ui/lists/generic_editable_list_sliver.dart';
 
 class GenericSearchableEditableList<T> extends StatefulWidget {
   const GenericSearchableEditableList({

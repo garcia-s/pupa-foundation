@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pupaadmin/core/widgets/buttons/circular_icon_button.dart';
+import 'package:pupaadmin/core/presentation/ui/buttons/circular_icon_button.dart';
+
 
 class CustomTabBar extends StatelessWidget {
   final List<Widget> tabs;

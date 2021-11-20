@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:pupaadmin/core/widgets/buttons/rounded_elevated_button.dart';
-import 'package:pupaadmin/core/widgets/errors/form_error.dart';
-import 'package:pupaadmin/core/widgets/loading.dart';
+import 'package:pupaadmin/core/presentation/ui/buttons/rounded_elevated_button.dart';
+import 'package:pupaadmin/core/presentation/ui/errors/form_error.dart';
+import 'package:pupaadmin/core/presentation/ui/loading.dart';
 
 
 

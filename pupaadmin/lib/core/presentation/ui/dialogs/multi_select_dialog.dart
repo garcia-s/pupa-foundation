@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pupaadmin/core/widgets/buttons/rounded_elevated_button.dart';
-import 'package:pupaadmin/core/widgets/lists/generic_editable_list_sliver.dart';
-import 'package:pupaadmin/core/widgets/lists/pressable_generic_list_item.dart';
+import 'package:pupaadmin/core/presentation/ui/buttons/rounded_elevated_button.dart';
+import 'package:pupaadmin/core/presentation/ui/lists/generic_editable_list_sliver.dart';
+import 'package:pupaadmin/core/presentation/ui/lists/pressable_generic_list_item.dart';
 
 class MultiSelectDialogOption<T> {
   MultiSelectDialogOption({
