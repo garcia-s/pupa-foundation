@@ -1,4 +1,4 @@
-import { DBCONFIG } from "../config";
+import { DBCONFIG } from "../core/config";
 import { INSTALL_DBCONFIG } from "./install_config";
 import { Pool } from "pg";
 import { createUsersTable } from "./tables/user";

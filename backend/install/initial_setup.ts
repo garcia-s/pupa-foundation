@@ -1,7 +1,7 @@
 
 import pg from "pg";
 
-import { DBCONFIG } from "../config";
+import { DBCONFIG } from "../core/config";
 import { INSTALL_DBCONFIG } from "./install_config";
 
 
